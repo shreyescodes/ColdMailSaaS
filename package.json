@@ -1,0 +1,39 @@
+{
+  "name": "coldmail-saas",
+  "version": "1.0.0",
+  "description": "Cold Email SaaS Platform - Multi-tenant email automation platform",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "libs/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "nx build",
+    "test": "nx test",
+    "lint": "nx lint",
+    "dev": "nx serve api",
+    "start": "nx serve api --prod",
+    "db:migrate": "nx run api:db:migrate",
+    "db:seed": "nx run api:db:seed",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "devDependencies": {
+    "@nx/eslint": "^18.0.0",
+    "@nx/jest": "^18.0.0",
+    "@nx/js": "^21.4.0",
+    "@nx/nest": "^18.0.0",
+    "@nx/webpack": "^21.4.0",
+    "@nx/workspace": "^18.0.0",
+    "eslint": "^8.57.0",
+    "nx": "^18.0.0",
+    "prettier": "^3.2.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

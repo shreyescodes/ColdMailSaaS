@@ -1,0 +1,553 @@
+{
+  "version": "6.0",
+  "nxVersion": "18.3.5",
+  "deps": {
+    "@nx/eslint": "^18.0.0",
+    "@nx/jest": "^18.0.0",
+    "@nx/js": "^21.4.0",
+    "@nx/nest": "^18.0.0",
+    "@nx/webpack": "^21.4.0",
+    "@nx/workspace": "^18.0.0",
+    "eslint": "^8.57.0",
+    "nx": "^18.0.0",
+    "prettier": "^3.2.0",
+    "typescript": "^5.3.0"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": false
+    }
+  },
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "10082901448985375627"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "15242353937057791533"
+      },
+      {
+        "file": "docker/postgres/init.sql",
+        "hash": "12131359377071286200"
+      },
+      {
+        "file": "SETUP_GUIDE.md",
+        "hash": "3377675714066254586"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9563409876892484338"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "5831473782675580190"
+      },
+      {
+        "file": "README.md",
+        "hash": "11245432216648339475"
+      },
+      {
+        "file": "package.json",
+        "hash": "15969579989781357535"
+      },
+      {
+        "file": "env.example",
+        "hash": "6718088861658436320"
+      },
+      {
+        "file": "nx.json",
+        "hash": "8959349551247118094"
+      }
+    ],
+    "projectFileMap": {
+      "coldmail-saas-web": [
+        {
+          "file": "apps/web/package.json",
+          "hash": "844592094903714980"
+        },
+        {
+          "file": "apps/web/public/index.html",
+          "hash": "17192852505931233639"
+        },
+        {
+          "file": "apps/web/src/App.tsx",
+          "hash": "12340938146657597617"
+        },
+        {
+          "file": "apps/web/src/components/Common/LoadingSpinner.tsx",
+          "hash": "8756996023798539027"
+        },
+        {
+          "file": "apps/web/src/components/Layout/Layout.tsx",
+          "hash": "10120447516345680144"
+        },
+        {
+          "file": "apps/web/src/contexts/AuthContext.tsx",
+          "hash": "10947841741145012612"
+        },
+        {
+          "file": "apps/web/src/index.tsx",
+          "hash": "11771811158490640353"
+        },
+        {
+          "file": "apps/web/src/pages/Analytics/AnalyticsPage.tsx",
+          "hash": "2172705544187121270"
+        },
+        {
+          "file": "apps/web/src/pages/Auth/LoginPage.tsx",
+          "hash": "1749245136524033124"
+        },
+        {
+          "file": "apps/web/src/pages/Auth/RegisterPage.tsx",
+          "hash": "18208333127686889186"
+        },
+        {
+          "file": "apps/web/src/pages/Campaigns/CampaignsPage.tsx",
+          "hash": "6434141960634150460"
+        },
+        {
+          "file": "apps/web/src/pages/Contacts/ContactsPage.tsx",
+          "hash": "9878464771099962212"
+        },
+        {
+          "file": "apps/web/src/pages/Dashboard/DashboardPage.tsx",
+          "hash": "672982845627330101"
+        },
+        {
+          "file": "apps/web/src/pages/Dashboard/components/DashboardChart.tsx",
+          "hash": "15104148511768831092"
+        },
+        {
+          "file": "apps/web/src/pages/Dashboard/components/QuickActions.tsx",
+          "hash": "2134671958770406267"
+        },
+        {
+          "file": "apps/web/src/pages/Dashboard/components/RecentActivity.tsx",
+          "hash": "9701989361335220211"
+        },
+        {
+          "file": "apps/web/src/pages/Settings/SettingsPage.tsx",
+          "hash": "13831854357339234281"
+        },
+        {
+          "file": "apps/web/src/pages/Workflows/WorkflowsPage.tsx",
+          "hash": "13172778392077756320"
+        },
+        {
+          "file": "apps/web/src/services/api.ts",
+          "hash": "17547955619098573096"
+        },
+        {
+          "file": "apps/web/src/store/slices/campaignsSlice.ts",
+          "hash": "11703314690034536005"
+        },
+        {
+          "file": "apps/web/src/store/slices/contactsSlice.ts",
+          "hash": "4708488823058107652"
+        },
+        {
+          "file": "apps/web/src/store/slices/notificationsSlice.ts",
+          "hash": "96372687657901083"
+        },
+        {
+          "file": "apps/web/src/store/store.ts",
+          "hash": "4529763634007647824"
+        }
+      ],
+      "api": [
+        {
+          "file": "apps/api/Dockerfile",
+          "hash": "10400236080849269719"
+        },
+        {
+          "file": "apps/api/jest.config.ts",
+          "hash": "1710753457187710397"
+        },
+        {
+          "file": "apps/api/package.json",
+          "hash": "7668739775287478030",
+          "deps": [
+            "npm:@nestjs/bull",
+            "npm:@nestjs/common",
+            "npm:@nestjs/config",
+            "npm:@nestjs/core",
+            "npm:@nestjs/event-emitter",
+            "npm:@nestjs/jwt",
+            "npm:@nestjs/passport",
+            "npm:@nestjs/platform-express",
+            "npm:@nestjs/schedule",
+            "npm:@nestjs/swagger",
+            "npm:@nestjs/terminus",
+            "npm:@nestjs/throttler",
+            "npm:@nestjs/typeorm",
+            "npm:bcrypt",
+            "npm:bullmq",
+            "npm:class-transformer",
+            "npm:class-validator",
+            "npm:compression",
+            "npm:helmet",
+            "npm:nodemailer",
+            "npm:openai",
+            "npm:passport",
+            "npm:passport-jwt",
+            "npm:passport-local",
+            "npm:pg",
+            "npm:redis",
+            "npm:reflect-metadata",
+            "npm:rxjs",
+            "npm:typeorm",
+            "npm:@nestjs/cli",
+            "npm:@nestjs/schematics",
+            "npm:@nestjs/testing",
+            "npm:@types/bcrypt",
+            "npm:@types/compression",
+            "npm:@types/express",
+            "npm:@types/jest",
+            "npm:@types/node",
+            "npm:@types/nodemailer",
+            "npm:@types/passport-jwt",
+            "npm:@types/passport-local",
+            "npm:@types/supertest",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-prettier",
+            "npm:jest",
+            "npm:prettier",
+            "npm:source-map-support",
+            "npm:supertest",
+            "npm:ts-loader",
+            "npm:ts-node",
+            "npm:tsconfig-paths",
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "apps/api/src/app.module.ts",
+          "hash": "2563643292120565480"
+        },
+        {
+          "file": "apps/api/src/config/ai.config.ts",
+          "hash": "7335017930354959117"
+        },
+        {
+          "file": "apps/api/src/config/app.config.ts",
+          "hash": "4357047342951874427"
+        },
+        {
+          "file": "apps/api/src/config/database.config.ts",
+          "hash": "3253739610500908603"
+        },
+        {
+          "file": "apps/api/src/config/redis.config.ts",
+          "hash": "11850267093035068473"
+        },
+        {
+          "file": "apps/api/src/health/health.controller.ts",
+          "hash": "11824265773271251699"
+        },
+        {
+          "file": "apps/api/src/main.ts",
+          "hash": "721522204031865366"
+        },
+        {
+          "file": "apps/api/src/modules/ai/ai.controller.ts",
+          "hash": "6796552714365319221"
+        },
+        {
+          "file": "apps/api/src/modules/ai/ai.module.ts",
+          "hash": "16645355520955000233"
+        },
+        {
+          "file": "apps/api/src/modules/ai/ai.service.ts",
+          "hash": "8817253048861139463"
+        },
+        {
+          "file": "apps/api/src/modules/analytics/analytics.controller.ts",
+          "hash": "12359191743993520222"
+        },
+        {
+          "file": "apps/api/src/modules/analytics/analytics.module.ts",
+          "hash": "13377265304394054891"
+        },
+        {
+          "file": "apps/api/src/modules/analytics/analytics.service.ts",
+          "hash": "11017709011492105308"
+        },
+        {
+          "file": "apps/api/src/modules/analytics/services/report-builder.service.ts",
+          "hash": "1287635331171156849"
+        },
+        {
+          "file": "apps/api/src/modules/auth/auth.controller.ts",
+          "hash": "2332814521593684398"
+        },
+        {
+          "file": "apps/api/src/modules/auth/auth.module.ts",
+          "hash": "16922320203729192914"
+        },
+        {
+          "file": "apps/api/src/modules/auth/auth.service.ts",
+          "hash": "9609695539866003949"
+        },
+        {
+          "file": "apps/api/src/modules/auth/dto/login.dto.ts",
+          "hash": "16652537809427484914"
+        },
+        {
+          "file": "apps/api/src/modules/auth/dto/register.dto.ts",
+          "hash": "16931760926706391627"
+        },
+        {
+          "file": "apps/api/src/modules/auth/guards/permissions.guard.ts",
+          "hash": "16063389108514864264"
+        },
+        {
+          "file": "apps/api/src/modules/auth/interfaces/jwt-payload.interface.ts",
+          "hash": "17793158677245756724"
+        },
+        {
+          "file": "apps/api/src/modules/auth/strategies/jwt.strategy.ts",
+          "hash": "3066719089734877059"
+        },
+        {
+          "file": "apps/api/src/modules/auth/strategies/local.strategy.ts",
+          "hash": "9291406698988194944"
+        },
+        {
+          "file": "apps/api/src/modules/campaigns/campaigns.module.ts",
+          "hash": "18374581926007063282"
+        },
+        {
+          "file": "apps/api/src/modules/campaigns/campaigns.service.ts",
+          "hash": "15771161356273640198"
+        },
+        {
+          "file": "apps/api/src/modules/campaigns/entities/campaign.entity.ts",
+          "hash": "3317301808322744243"
+        },
+        {
+          "file": "apps/api/src/modules/campaigns/entities/contact-list.entity.ts",
+          "hash": "14197723016354873925"
+        },
+        {
+          "file": "apps/api/src/modules/campaigns/entities/contact.entity.ts",
+          "hash": "6561994167710113465"
+        },
+        {
+          "file": "apps/api/src/modules/campaigns/entities/email.entity.ts",
+          "hash": "18411528672667782355"
+        },
+        {
+          "file": "apps/api/src/modules/campaigns/services/ab-testing.service.ts",
+          "hash": "7075214936854536571"
+        },
+        {
+          "file": "apps/api/src/modules/campaigns/services/dynamic-variables.service.ts",
+          "hash": "14271291812817080842"
+        },
+        {
+          "file": "apps/api/src/modules/compliance/compliance.controller.ts",
+          "hash": "2493651612719741792"
+        },
+        {
+          "file": "apps/api/src/modules/compliance/compliance.module.ts",
+          "hash": "15676190540655892942"
+        },
+        {
+          "file": "apps/api/src/modules/compliance/compliance.service.ts",
+          "hash": "3185106876709857625"
+        },
+        {
+          "file": "apps/api/src/modules/deliverability/deliverability.controller.ts",
+          "hash": "14939798215381372864"
+        },
+        {
+          "file": "apps/api/src/modules/deliverability/deliverability.module.ts",
+          "hash": "15313771196701482000"
+        },
+        {
+          "file": "apps/api/src/modules/deliverability/deliverability.service.ts",
+          "hash": "6608124349703463150"
+        },
+        {
+          "file": "apps/api/src/modules/domains/domains.controller.ts",
+          "hash": "15080339743268762641"
+        },
+        {
+          "file": "apps/api/src/modules/domains/domains.module.ts",
+          "hash": "14285589894724010923"
+        },
+        {
+          "file": "apps/api/src/modules/domains/domains.service.ts",
+          "hash": "7613529657436509150"
+        },
+        {
+          "file": "apps/api/src/modules/domains/entities/domain.entity.ts",
+          "hash": "5952605188938253341"
+        },
+        {
+          "file": "apps/api/src/modules/domains/services/dns-verification.service.ts",
+          "hash": "9295688554096325048"
+        },
+        {
+          "file": "apps/api/src/modules/email/email.module.ts",
+          "hash": "2822779158380184043"
+        },
+        {
+          "file": "apps/api/src/modules/email/email.service.ts",
+          "hash": "9436406432736198584"
+        },
+        {
+          "file": "apps/api/src/modules/email/services/email-sending.service.ts",
+          "hash": "6968475355553321153"
+        },
+        {
+          "file": "apps/api/src/modules/enterprise/enterprise.controller.ts",
+          "hash": "1985597022087974317"
+        },
+        {
+          "file": "apps/api/src/modules/enterprise/enterprise.module.ts",
+          "hash": "4194195382898180181"
+        },
+        {
+          "file": "apps/api/src/modules/mailboxes/entities/mailbox.entity.ts",
+          "hash": "3821211813306187107"
+        },
+        {
+          "file": "apps/api/src/modules/mailboxes/mailboxes.controller.ts",
+          "hash": "9610418733568989727"
+        },
+        {
+          "file": "apps/api/src/modules/mailboxes/mailboxes.module.ts",
+          "hash": "17224308896620079424"
+        },
+        {
+          "file": "apps/api/src/modules/mailboxes/mailboxes.service.ts",
+          "hash": "11566855364611884165"
+        },
+        {
+          "file": "apps/api/src/modules/mailboxes/services/ip-pool.service.ts",
+          "hash": "17624007041194042681"
+        },
+        {
+          "file": "apps/api/src/modules/organizations/entities/organization.entity.ts",
+          "hash": "3971751851682442197"
+        },
+        {
+          "file": "apps/api/src/modules/organizations/enums/organization-type.enum.ts",
+          "hash": "5905403860626202398"
+        },
+        {
+          "file": "apps/api/src/modules/organizations/organizations.controller.ts",
+          "hash": "2896377583664275971"
+        },
+        {
+          "file": "apps/api/src/modules/organizations/organizations.module.ts",
+          "hash": "18175140304758451866"
+        },
+        {
+          "file": "apps/api/src/modules/organizations/organizations.service.ts",
+          "hash": "10676481059868580213"
+        },
+        {
+          "file": "apps/api/src/modules/permissions/permissions.module.ts",
+          "hash": "15154281168620795511"
+        },
+        {
+          "file": "apps/api/src/modules/permissions/permissions.service.ts",
+          "hash": "5451796035408682912"
+        },
+        {
+          "file": "apps/api/src/modules/rate-limiting/entities/api-usage.entity.ts",
+          "hash": "12965811933649489873"
+        },
+        {
+          "file": "apps/api/src/modules/rate-limiting/rate-limiting.module.ts",
+          "hash": "6885305110362274794"
+        },
+        {
+          "file": "apps/api/src/modules/rate-limiting/rate-limiting.service.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/api/src/modules/teams/advanced-team.module.ts",
+          "hash": "4136236819576532947"
+        },
+        {
+          "file": "apps/api/src/modules/teams/advanced-team.service.ts",
+          "hash": "5318804804917204537"
+        },
+        {
+          "file": "apps/api/src/modules/teams/teams.module.ts",
+          "hash": "17498300667854391469"
+        },
+        {
+          "file": "apps/api/src/modules/teams/teams.service.ts",
+          "hash": "10997202119824901610"
+        },
+        {
+          "file": "apps/api/src/modules/users/dto/accept-invitation.dto.ts",
+          "hash": "5437644219940350291"
+        },
+        {
+          "file": "apps/api/src/modules/users/dto/create-invitation.dto.ts",
+          "hash": "16531702749990907760"
+        },
+        {
+          "file": "apps/api/src/modules/users/entities/user-invitation.entity.ts",
+          "hash": "16059381833464463080"
+        },
+        {
+          "file": "apps/api/src/modules/users/entities/user.entity.ts",
+          "hash": "1832529926959350613"
+        },
+        {
+          "file": "apps/api/src/modules/users/enums/user-role.enum.ts",
+          "hash": "8778829988075353039"
+        },
+        {
+          "file": "apps/api/src/modules/users/users.controller.ts",
+          "hash": "14849177869693402751"
+        },
+        {
+          "file": "apps/api/src/modules/users/users.module.ts",
+          "hash": "13679708546503937109"
+        },
+        {
+          "file": "apps/api/src/modules/users/users.service.ts",
+          "hash": "5330060196087308074"
+        },
+        {
+          "file": "apps/api/src/modules/workflows/entities/workflow-execution.entity.ts",
+          "hash": "9278064611288776645"
+        },
+        {
+          "file": "apps/api/src/modules/workflows/entities/workflow.entity.ts",
+          "hash": "2684416422467414341"
+        },
+        {
+          "file": "apps/api/src/modules/workflows/workflow.controller.ts",
+          "hash": "8361856853723644558"
+        },
+        {
+          "file": "apps/api/src/modules/workflows/workflow.module.ts",
+          "hash": "14424772791225344802"
+        },
+        {
+          "file": "apps/api/src/modules/workflows/workflow.service.ts",
+          "hash": "16133674496934389857"
+        },
+        {
+          "file": "apps/api/tsconfig.json",
+          "hash": "8022509686771883944"
+        }
+      ]
+    }
+  }
+}
