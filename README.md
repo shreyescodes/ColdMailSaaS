@@ -53,7 +53,7 @@ A multi-tenant cold email automation platform built with NestJS, TypeScript, and
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/shreyescodes/ColdMailSaaS
 cd coldmail-saas
 ```
 
